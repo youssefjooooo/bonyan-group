@@ -1,0 +1,167 @@
+{
+  "Hero": {
+    "title": "Building Strength",
+    "subtitle": "In Every Project",
+    "description": "Bonyan Group is a leading Egyptian industrial supplier delivering steel materials, lifting solutions, copper products, and industrial coatings. We support construction and industrial projects with materials that meet international standards.",
+    "cta": "Request a Quote",
+    "since": "Since 1998",
+    "trusted": "Trusted by Industry Leaders"
+  },
+  "Header": {
+    "home": "Home",
+    "whoWeAre": "Who We Are",
+    "whatWeDo": "What We Do",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "getQuoteNow": "Get Quote Now",
+    "menu": "Menu"
+  },
+  "About": {
+    "badge": "Who We Are",
+    "title": "Multi-Division Industrial Supply Company",
+    "description1": "Bonyan Group is a multi-division industrial supply company serving clients across Egypt and the Middle East. We specialize in sourcing, supplying, and supporting materials essential to construction, manufacturing, and heavy industry.",
+    "description2": "Our approach is straightforward: understand the project, supply the right materials, and stand behind them. We believe long-term partnerships are built through consistency, not promises.",
+    "whyChoose": "Why Choose Bonyan Group",
+    "feature1": "Multi-division industrial supply under one roof",
+    "feature2": "Materials aligned with international quality standards",
+    "feature3": "Reliable sourcing and consistent availability",
+    "feature4": "Practical technical support and industry experience",
+    "feature5": "Long-term partnership mindset",
+    "quote": "We don't compete on noise. We compete on performance."
+  },
+  "WhatWeDo": {
+    "badge": "What We Do",
+    "title": "Four Divisions.",
+    "titleHighlight": "One Reliable Partner.",
+    "description": "If materials move, lift, protect, or support structures, we're involved. We bring specialized expertise to every sector.",
+    "keyProducts": "Key Products",
+    "learnMore": "Learn More",
+    "steel": {
+      "title": "Steel Supply",
+      "description": "We provide structural and industrial steel materials suitable for a wide range of applications.",
+      "item1": "Steel Beams (H, I, C, L Sections)",
+      "item2": "Steel Plates and Coils",
+      "item3": "Hollow Sections and Steel Bars",
+      "item4": "Custom Fabricated Steel Solutions",
+      "note": "Supplied to meet project specifications and industry standards."
+    },
+    "lifting": {
+      "title": "Lifting & Crane Solutions",
+      "description": "Our lifting division delivers reliable equipment designed for safety, efficiency, and heavy-duty operations.",
+      "item1": "Electric Chain Hoists",
+      "item2": "Wire Rope Hoists",
+      "item3": "Overhead Cranes",
+      "item4": "Jib Cranes",
+      "item5": "Gantry Cranes",
+      "item6": "Monorail Systems",
+      "item7": "Crane Accessories",
+      "note": "We support both new installations and ongoing operational requirements."
+    },
+    "copper": {
+      "title": "Copper Supply",
+      "description": "High-purity copper products for electrical, industrial, and specialized uses.",
+      "item1": "Copper Sheets and Plates",
+      "item2": "Copper Rods and Bars",
+      "item3": "Custom Copper Supply Solutions",
+      "note": "Precision, consistency, and dependable sourcing."
+    },
+    "paints": {
+      "title": "Industrial & Automotive Paints",
+      "description": "Protective and decorative coatings designed for demanding environments.",
+      "item1": "Industrial Coatings",
+      "item2": "Automotive Paints",
+      "item3": "Wood Paints",
+      "item4": "Thinners and Additives",
+      "note": "Built for durability and performance."
+    }
+  },
+  "Industries": {
+    "badge": "Industries We Serve",
+    "title": "Trusted Across Multiple Sectors",
+    "construction": {
+      "title": "Construction and Infrastructure",
+      "description": "Supporting major building and infrastructure projects"
+    },
+    "manufacturing": {
+      "title": "Manufacturing and Heavy Industry",
+      "description": "Industrial materials for production facilities"
+    },
+    "warehousing": {
+      "title": "Warehousing and Logistics",
+      "description": "Material handling and storage solutions"
+    },
+    "automotive": {
+      "title": "Automotive and Industrial Facilities",
+      "description": "Specialized coatings and industrial supplies"
+    },
+    "energy": {
+      "title": "Energy and Utilities",
+      "description": "Reliable materials for critical infrastructure"
+    },
+    "general": {
+      "title": "General Industry",
+      "description": "Versatile solutions across sectors"
+    }
+  },
+  "Commitment": {
+    "badge": "Our Core Promise",
+    "title": "Integrity, Reliability, and",
+    "titleHighlight": "Quality",
+    "quote": "Integrity, reliability, and quality define everything we supply. Every shipment represents our reputation on-site, and we take that responsibility seriously.",
+    "goal": "Our goal is not to be the cheapest supplier,",
+    "goalHighlight": "but the most dependable one.",
+    "getInTouch": "Get in Touch Today",
+    "requestQuote": "Request a Quote"
+  },
+  "Contact": {
+    "badge": "Get In Touch",
+    "title": "Looking for a Reliable Industrial Supply Partner?",
+    "description": "Our team is ready to support your next project with the right materials and solutions.",
+    "form": {
+      "fullName": "Full Name",
+      "company": "Company Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "division": "Division Interest",
+      "message": "Message",
+      "selectDivision": "Select a division",
+      "steel": "Steel Supply",
+      "lifting": "Lifting & Crane Solutions",
+      "copper": "Copper Supply",
+      "paints": "Industrial & Automotive Paints",
+      "multiple": "Multiple Divisions",
+      "other": "Other",
+      "messagePlaceholder": "Tell us about your project requirements...",
+      "submit": "Send Message",
+      "required": "*"
+    },
+    "info": {
+      "visitUs": "Visit Us",
+      "callUs": "Call Us",
+      "emailUs": "Email Us",
+      "workingHours": "Working Hours",
+      "address": "Cairo, Egypt",
+      "phone": "+20 109 753 6662",
+      "email": "info@bonyangroup.com",
+      "hours1": "Saturday - Thursday: 8AM - 6PM",
+      "hours2": "Friday: Closed"
+    }
+  },
+  "Footer": {
+    "companyInfo": "Since 1998, Bonyan Group has been the backbone of Egypt's industrial sector. We deliver premium steel, lifting solutions, copper, and coatings with unwavering commitment to quality and safety.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "whoWeAre": "Who We Are",
+    "whatWeDo": "What We Do",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch",
+    "newsletter": "Newsletter",
+    "newsletterDescription": "Join our mailing list for industry insights and product updates.",
+    "emailPlaceholder": "Your email address",
+    "privacyNote": "We respect your privacy. No spam, ever.",
+    "copyright": "© 2026 Bonyan Group. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "sitemap": "Sitemap"
+  }
+}
