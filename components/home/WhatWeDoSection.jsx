@@ -11,6 +11,7 @@ import {
   PaintBucket,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export function WhatWeDoSection() {
   const t = useTranslations("WhatWeDo");
@@ -20,6 +21,7 @@ export function WhatWeDoSection() {
       title: t("steel.title"),
       icon: Cog,
       description: t("steel.description"),
+      link: "/services/steel",
       image:
         "https://images.unsplash.com/photo-1624027492684-327af1fb7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGZhY3RvcnklMjBwcm9kdWN0aW9ufGVufDF8fHx8MTc2NTY3MTc4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       items: [
@@ -34,6 +36,7 @@ export function WhatWeDoSection() {
       title: t("lifting.title"),
       icon: Zap,
       description: t("lifting.description"),
+      link: "/services/lifting",
       image:
         "https://images.unsplash.com/photo-1759390304567-c322de52f8bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmFuZSUyMGxpZnRpbmclMjBlcXVpcG1lbnR8ZW58MXx8fHwxNzY1OTAyNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       items: [
@@ -51,6 +54,7 @@ export function WhatWeDoSection() {
       title: t("copper.title"),
       icon: ShieldCheck,
       description: t("copper.description"),
+      link: "/services/copper",
       image:
         "https://images.unsplash.com/photo-1602272429619-752db85d8db0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3BwZXIlMjBtZXRhbCUyMHNoZWV0c3xlbnwxfHx8fDE3NjU5MDI1NjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       items: [t("copper.item1"), t("copper.item2"), t("copper.item3")],
@@ -60,6 +64,7 @@ export function WhatWeDoSection() {
       title: t("paints.title"),
       icon: PaintBucket,
       description: t("paints.description"),
+      link: "/services/paints",
       image:
         "https://images.unsplash.com/photo-1673297821205-e0575bbc2ab7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwcGFpbnQlMjBjb2F0aW5nfGVufDF8fHx8MTc2NTkwMjU2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       items: [
@@ -170,10 +175,12 @@ export function WhatWeDoSection() {
                   <p className="text-[#1b343b] italic text-sm font-medium">
                     "{division.note}"
                   </p>
-                  <button className="flex items-center gap-2 text-[#df352c] font-bold hover:gap-3 transition-all group">
+                  <Link
+                    href={division.link}
+                    className="flex items-center gap-2 text-[#df352c] font-bold hover:gap-3 transition-all group">
                     {t("learnMore")}{" "}
                     <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

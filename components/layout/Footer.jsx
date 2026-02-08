@@ -11,15 +11,16 @@ import {
   Phone,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export function Footer() {
   const t = useTranslations("Footer");
 
   const quickLinks = [
-    { name: t("home"), href: "#home" },
-    { name: t("whoWeAre"), href: "#about" },
-    { name: t("whatWeDo"), href: "#products" },
-    { name: t("contact"), href: "#contact" },
+    { name: t("home"), href: "/" },
+    { name: t("whoWeAre"), href: "/about" },
+    { name: t("whatWeDo"), href: "/#products" },
+    { name: t("contact"), href: "/contact" },
   ];
 
   return (
@@ -66,12 +67,12 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-slate-300 hover:text-[#df352c] hover:translate-x-1 rtl:hover:-translate-x-1 transition-all inline-flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 bg-[#df352c] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -109,35 +110,14 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 text-white border-l-4 border-[#df352c] pl-3 rtl:border-r-4 rtl:border-l-0 rtl:pr-3 rtl:pl-0">
-              {t("newsletter")}
-            </h3>
-            <p className="text-slate-300 text-sm mb-4">
-              {t("newsletterDescription")}
-            </p>
-            <div className="space-y-3">
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder={t("emailPlaceholder")}
-                  className="w-full pl-4 pr-12 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-[#df352c] focus:ring-1 focus:ring-[#df352c] text-white text-sm placeholder:text-slate-500 transition-all rtl:pr-4 rtl:pl-12"
-                />
-                <button className="absolute right-1 top-1 bottom-1 bg-[#df352c] w-10 flex items-center justify-center rounded hover:bg-[#c52e25] transition-colors group rtl:right-auto rtl:left-1">
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 rtl:rotate-180 transition-transform" />
-                </button>
-              </div>
-              <p className="text-xs text-slate-500">{t("privacyNote")}</p>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-400 text-sm">{t("copyright")}</p>
-          <div className="flex gap-6 text-sm text-slate-400">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 w-full">
+          <p className="text-slate-400 text-sm text-end w-full">
+            {t("copyright")}
+          </p>
+          {/* <div className="flex gap-6 text-sm text-slate-400">
             <a href="#" className="hover:text-white transition-colors">
               {t("privacyPolicy")}
             </a>
@@ -147,7 +127,7 @@ export function Footer() {
             <a href="#" className="hover:text-white transition-colors">
               {t("sitemap")}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

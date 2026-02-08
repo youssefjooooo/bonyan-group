@@ -3,11 +3,13 @@
 import { ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../common/ImageWithFallback";
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export function HeroSection() {
   const t = useTranslations("Hero");
-
+  const locale = useLocale();
+  const isEnglish = locale === "en";
   return (
     <section
       id="home"
@@ -47,7 +49,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
             {t("title")} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">
               {t("subtitle")}
@@ -58,7 +60,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
+            className="text-lg text-slate-200 mb-8 max-w-2xl leading-relaxed">
             {t("description")}
           </motion.p>
 
@@ -67,12 +69,14 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-            <a
-              href="#contact"
+            {/* <Link
+              href="/contact"
               className="group bg-[#df352c] text-white px-8 py-4 rounded-lg hover:bg-[#c52e25] transition-all hover:shadow-[0_0_20px_rgba(223,53,44,0.3)] flex items-center gap-2 font-bold">
               {t("cta")}{" "}
-              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+              <ChevronRight
+                className={` ${!isEnglish && "rotate-180"} w-5 h-5 group-hover:translate-x-1 transition-transform`}
+              />
+            </Link> */}
             <div className="text-lg font-medium border-l-2 border-white/30 pl-4 ml-2 rtl:border-r-2 rtl:border-l-0 rtl:pr-4 rtl:pl-0 rtl:mr-2 rtl:ml-0">
               <span className="block text-[#df352c]">{t("since")}</span>
               <span className="text-sm text-slate-400">{t("trusted")}</span>

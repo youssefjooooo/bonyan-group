@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { Quote } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export function CommitmentSection() {
   const t = useTranslations("Commitment");
@@ -87,16 +88,16 @@ export function CommitmentSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="bg-[#df352c] text-white px-10 py-4 rounded-lg hover:bg-[#c52e25] transition-all hover:shadow-lg hover:shadow-[#df352c]/20 hover:-translate-y-1 font-bold text-lg">
             {t("getInTouch")}
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             className="group bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg hover:bg-white hover:text-[#1b343b] transition-all font-bold text-lg">
             {t("requestQuote")}
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

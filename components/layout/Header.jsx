@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Link } from "@/i18n/routing";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,10 +21,10 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { name: t("home"), href: "#home" },
-    { name: t("whoWeAre"), href: "#about" },
-    { name: t("whatWeDo"), href: "#products" },
-    { name: t("contact"), href: "#contact" },
+    { name: t("home"), href: "/" },
+    { name: t("whoWeAre"), href: "/about" },
+    { name: t("whatWeDo"), href: "/#products" },
+    { name: t("contact"), href: "/contact" },
   ];
 
   return (
@@ -69,35 +70,36 @@ export function Header() {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#home" className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
                 <div
                   className={`font-bold text-[#1b343b] transition-all duration-300 ${
                     scrolled ? "text-2xl" : "text-3xl"
                   }`}>
                   <span className="text-[#df352c]">BONYAN</span> GROUP
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
                   href={link.href}
                   className="relative text-[#1b343b] font-medium hover:text-[#df352c] transition-colors group py-2">
                   {link.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#df352c] transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="group relative overflow-hidden bg-[#1b343b] text-white px-6 py-2.5 rounded hover:shadow-lg transition-all duration-300">
                 <div className="absolute inset-0 w-0 bg-[#df352c] transition-all duration-[250ms] ease-out group-hover:w-full opacity-100"></div>
                 <span className="relative flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300">
-                  {t("getQuote")} <ChevronRight className="w-4 h-4" />
+                  {t("getQuote")}{" "}
+                  <ChevronRight className="w-4 h-4 rtl:rotate-180" />
                 </span>
-              </a>
+              </Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -144,26 +146,23 @@ export function Header() {
 
                 <nav className="flex-1 p-6 space-y-2 overflow-y-auto">
                   {navLinks.map((link, idx) => (
-                    <motion.a
+                    <Link
                       key={link.name}
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: idx * 0.1 }}
                       className="block text-lg font-medium text-slate-600 hover:text-[#1b343b] hover:bg-slate-50 px-4 py-3 rounded-lg transition-colors border-l-4 border-transparent hover:border-[#df352c]">
                       {link.name}
-                    </motion.a>
+                    </Link>
                   ))}
                 </nav>
 
                 <div className="p-6 border-t border-slate-100 bg-slate-50">
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/contact"
                     onClick={() => setMobileMenuOpen(false)}
                     className="flex items-center justify-center w-full bg-[#df352c] text-white px-6 py-4 rounded-lg hover:bg-[#c52e25] transition-colors font-bold shadow-md hover:shadow-lg transform active:scale-95">
                     {t("getQuoteNow")}
-                  </a>
+                  </Link>
 
                   <div className="mt-6 flex justify-center">
                     <LanguageSwitcher />
