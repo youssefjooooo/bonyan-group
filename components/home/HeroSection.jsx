@@ -13,7 +13,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-[600px] md:h-[800px] overflow-hidden">
+      className="relative h-[700px] md:h-[800px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/30 z-10"></div>
@@ -23,7 +23,7 @@ export function HeroSection() {
           transition={{ duration: 10, ease: "easeOut" }}
           className="w-full h-full">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1624027492684-327af1fb7559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGZhY3RvcnklMjBwcm9kdWN0aW9ufGVufDF8fHx8MTc2NTY3MTc4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="/assets/services/irondep/steel 1.png"
             alt="Steel Production Facility"
             className="w-full h-full object-cover"
           />
@@ -78,8 +78,12 @@ export function HeroSection() {
               />
             </Link> */}
             <div className="text-lg font-medium border-l-2 border-white/30 pl-4 ml-2 rtl:border-r-2 rtl:border-l-0 rtl:pr-4 rtl:pl-0 rtl:mr-2 rtl:ml-0">
-              <span className="block text-[#df352c]">{t("since")}</span>
-              <span className="text-sm text-slate-400">{t("trusted")}</span>
+              <span className="block text-sm text-slate-300 mb-1">
+                {t("trusted")}
+              </span>
+              <span className="text-lg text-[#df352c] italic">
+                {t("tagline")}
+              </span>
             </div>
           </motion.div>
         </div>

@@ -2,8 +2,9 @@
   "Hero": {
     "title": "Building Strength",
     "subtitle": "In Every Project",
-    "description": "Bonyan Group is a leading Egyptian industrial supplier delivering steel materials, lifting solutions, copper products, and industrial coatings. We support construction and industrial projects with materials that meet international standards.",
-    "cta": "Request a Quote",
+    "description": "Bonyan Group is a leading company specializing in the trading and supply of all steel materials, including beams, plates, and structural sections, as well as copper materials, hoists, cranes, and crane accessories. We support construction and industrial projects with materials that meet international standards and perform under pressure.",
+    "cta": "Contact Us | Request a Quote",
+    "tagline": "Strength you can build on. Reliability you can trust.",
     "since": "Since 1998",
     "trusted": "Trusted by Industry Leaders"
   },
@@ -19,10 +20,10 @@
   "About": {
     "badge": "Who We Are",
     "title": "Multi-Division Industrial Supply Company",
-    "description1": "Bonyan Group is a multi-division industrial supply company serving clients across Egypt and the Middle East. We specialize in sourcing, supplying, and supporting materials essential to construction, manufacturing, and heavy industry.",
+    "description1": "Bonyan Group is a multi-division industrial supply company serving clients across Egypt, Africa and the Middle East. We specialize the trading of all steel materials, including beams, plates, and structural sections, as well as hoists, cranes and crane accessories.",
     "description2": "Our approach is straightforward: understand the project, supply the right materials, and stand behind them. We believe long-term partnerships are built through consistency, not promises.",
     "whyChoose": "Why Choose Bonyan Group",
-    "feature1": "Multi-division industrial supply under one roof",
+    "feature1": "Multi-division industrial supplier",
     "feature2": "Materials aligned with international quality standards",
     "feature3": "Reliable sourcing and consistent availability",
     "feature4": "Practical technical support and industry experience",
@@ -110,6 +111,8 @@
     "quote": "Integrity, reliability, and quality define everything we supply. Every shipment represents our reputation on-site, and we take that responsibility seriously.",
     "goal": "Our goal is not to be the cheapest supplier,",
     "goalHighlight": "but the most dependable one.",
+    "ctaTitle": "Looking for a reliable industrial supply partner?",
+    "ctaDescription": "Our team is ready to support your next project with the right materials and solutions.",
     "getInTouch": "Get in Touch Today",
     "requestQuote": "Request a Quote"
   },
@@ -142,8 +145,8 @@
       "workingHours": "Working Hours",
       "address": "Cairo, Egypt",
       "phone": "+20 109 753 6662",
-      "email": "info@bonyangroup.com",
-      "hours1": "Saturday - Thursday: 8AM - 6PM",
+      "email": "Sales@bonyangroup.co",
+      "hours1": "Saturday - Thursday: 8AM - 5PM",
       "hours2": "Friday: Closed"
     }
   },
@@ -223,7 +226,42 @@
     "processStep4": "Ongoing support as required",
     "processOutro": "This ensures consistency and reduces risk during project execution.",
     "getQuoteTitle": "Get a Quote",
-    "getQuoteText": "If you require {serviceName} or need support selecting the right solution, our team is ready to assist."
+    "getQuoteText": "If you require {serviceName} or need support selecting the right solution, our team is ready to assist.",
+    "galleryBadge": "Our Products",
+    "galleryTitle": "See It in Action",
+    "steelImages": [
+      "/assets/services/irondep/steel.jpeg",
+      "/assets/services/irondep/steel 1.png",
+      "/assets/services/irondep/steel 2.png",
+      "/assets/services/irondep/jarmoluk-laser-2819143_1920.jpg",
+      "/assets/services/irondep/pexels-cmrcn-29988981.jpg",
+      "/assets/services/irondep/pexels-cmrcn-29988985.jpg",
+      "/assets/services/irondep/pexels-cmrcn-29988986.jpg",
+      "/assets/services/irondep/pexels-cmrcn-29988987.jpg",
+      "/assets/services/irondep/pexels-michael-orshan-2159363670-36003992.jpg",
+      "/assets/services/irondep/pexels-rolledalloys-metal-supply-8972008.jpg"
+    ],
+    "liftingImages": [
+      "/assets/services/cranesdep/istockphoto-1216717981-612x612.jpg",
+      "/assets/services/cranesdep/istockphoto-1318650911-612x612.jpg",
+      "/assets/services/cranesdep/istockphoto-2177549399-612x612.jpg",
+      "/assets/services/cranesdep/istockphoto-484014187-612x612.jpg",
+      "/assets/services/cranesdep/pexels-cmrcn-29224558.jpg",
+      "/assets/services/cranesdep/pexels-cmrcn-29224602 (1).jpg",
+      "/assets/services/cranesdep/pexels-jan-van-der-wolf-11680885-30432694.jpg",
+      "/assets/services/cranesdep/pexels-jan-van-der-wolf-11680885-33566657.jpg"
+    ],
+    "copperImages": [
+      "/assets/services/copperdep/cover.jpg",
+      "/assets/services/copperdep/istockphoto-1202779355-612x612.jpg",
+      "/assets/services/copperdep/istockphoto-1220652550-612x612.jpg",
+      "/assets/services/copperdep/istockphoto-1220653310-612x612.jpg",
+      "/assets/services/copperdep/istockphoto-1925779252-612x612.jpg"
+    ],
+    "paintsImages": [
+      "/assets/services/paintdep/paint.png",
+      "/assets/services/paintdep/jotuncan_backgroundsand.webp"
+    ]
   },
   "NotFound": {
     "title": "Page Not Found",

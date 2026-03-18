@@ -48,7 +48,7 @@ export function Footer() {
               {t("companyInfo")}
             </p>
             <div className="flex gap-4 pt-2">
-              {[Facebook, Linkedin, Twitter, Instagram].map((Icon, idx) => (
+              {[Facebook, Linkedin].map((Icon, idx) => (
                 <a
                   key={idx}
                   href="#"
@@ -87,14 +87,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#df352c] flex-shrink-0 mt-0.5" />
                 <span className="text-slate-300 text-sm">
-                  123 Industrial Zone, 6th of October City,
-                  <br />
-                  Giza, Egypt
+                  Qalyub, cairo, Egypt
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#df352c] flex-shrink-0" />
                 <a
+                  dir="ltr"
                   href="tel:+201097536662"
                   className="text-slate-300 hover:text-white transition-colors text-sm">
                   +20 109 753 6662
@@ -103,9 +102,9 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#df352c] flex-shrink-0" />
                 <a
-                  href="mailto:info@bonyangroup.com"
+                  href="mailto:Sales@bonyangroup.co"
                   className="text-slate-300 hover:text-white transition-colors text-sm">
-                  info@bonyangroup.com
+                  Sales@bonyangroup.co
                 </a>
               </li>
             </ul>

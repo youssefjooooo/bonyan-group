@@ -45,7 +45,7 @@ export function AboutSection() {
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1760973599721-2b55efe65b5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwRWd5cHR8ZW58MXx8fHwxNzY1OTAyNTY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/assets/services/irondep/pexels-rolledalloys-metal-supply-8972008.jpg"
                 alt="Construction Projects"
                 className="w-full h-[500px] object-cover"
               />

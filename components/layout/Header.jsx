@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,6 +36,7 @@ export function Header() {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-6">
               <a
+                dir="ltr"
                 href="tel:+201097536662"
                 className="flex items-center gap-2 hover:text-white transition-colors group">
                 <div className="p-1 rounded-full bg-[#df352c]/10 group-hover:bg-[#df352c] transition-colors">
@@ -43,12 +45,13 @@ export function Header() {
                 <span>+20 109 753 6662</span>
               </a>
               <a
-                href="mailto:info@bonyangroup.com"
+                dir="ltr"
+                href="mailto:Sales@bonyangroup.co"
                 className="flex items-center gap-2 hover:text-white transition-colors group">
                 <div className="p-1 rounded-full bg-[#df352c]/10 group-hover:bg-[#df352c] transition-colors">
                   <Mail className="w-3.5 h-3.5 text-[#df352c] group-hover:text-white transition-colors" />
                 </div>
-                <span>info@bonyangroup.com</span>
+                <span>Sales@bonyangroup.co</span>
               </a>
             </div>
             <LanguageSwitcher className="hidden md:flex" />
@@ -58,10 +61,10 @@ export function Header() {
 
       {/* Main Header */}
       <motion.header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
+        className={`sticky bg-white top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white shadow-lg py-2"
-            : "bg-white/95 backdrop-blur-sm py-4 border-b border-slate-100"
+            ? " shadow-lg py-2 bg-white backdrop-blur-3xl"
+            : "bg-white py-4 border-b "
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -75,7 +78,13 @@ export function Header() {
                   className={`font-bold text-[#1b343b] transition-all duration-300 ${
                     scrolled ? "text-2xl" : "text-3xl"
                   }`}>
-                  <span className="text-[#df352c]">BONYAN</span> GROUP
+                  <Image
+                    src="/assets/logo.jpg"
+                    alt="Logo"
+                    width={150}
+                    height={40}
+                    className="w-auto h-12"
+                  />
                 </div>
               </Link>
             </div>

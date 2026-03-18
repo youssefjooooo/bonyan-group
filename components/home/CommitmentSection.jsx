@@ -18,7 +18,7 @@ export function CommitmentSection() {
           className="w-full h-full object-cover fixed-bg"
         />
         {/* Improved Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1b343b] via-[#1b343b]/95 to-[#0f1f23]/90"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-[#1b343b] via-[#1b343b]/95 to-[#0f1f23]/90"></div>
 
         {/* Decorative pattern */}
         <div
@@ -56,7 +56,7 @@ export function CommitmentSection() {
           transition={{ delay: 0.2 }}
           className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
           {t("title")}{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#df352c] to-orange-500">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-[#df352c] to-orange-500">
             {t("titleHighlight")}
           </span>
         </motion.h2>
@@ -80,6 +80,16 @@ export function CommitmentSection() {
             {t("goal")} <br />
             <span className="text-[#df352c]">{t("goalHighlight")}</span>
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.45 }}
+          className="mb-8">
+          <p className="text-2xl font-semibold text-white mb-2">{t("ctaTitle")}</p>
+          <p className="text-slate-300">{t("ctaDescription")}</p>
         </motion.div>
 
         <motion.div

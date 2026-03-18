@@ -8,8 +8,8 @@ export function AboutHero() {
   const t = useTranslations("AboutPage");
 
   return (
-    <section className="relative py-20 bg-[#1b343b] overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+    <section className="relative py-20 bg-[#1b343b] overflow-hidden h-[50vh] flex items-center justify-center">
+      <div className="absolute inset-0 overflow-hidden ">
         <div className="absolute -top-[50%] -right-[10%] w-[800px] h-[800px] rounded-full bg-[#df352c]/5 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-[#1b343b] to-transparent z-10"></div>
         <ImageWithFallback

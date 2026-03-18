@@ -1,9 +1,11 @@
 "use client";
 
 import { notFound, useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ServiceOverview } from "@/components/services/ServiceOverview";
 import { ServiceDetails } from "@/components/services/ServiceDetails";
+import { ServiceImageCarousel } from "@/components/services/ServiceImageCarousel";
 
 const serviceData = {
   steel: {
@@ -74,6 +76,7 @@ const serviceData = {
 
 export default function ServicePage() {
   const { slug, locale } = useParams();
+  const t = useTranslations("ServicePage");
 
   const serviceKey = Array.isArray(slug) ? slug[0] : slug;
   const currentService = serviceData[serviceKey];
@@ -91,14 +94,28 @@ export default function ServicePage() {
     names: { en: "Individual Service", ar: "خدمة فردية" },
     types: { en: "Service", ar: "الخدمة" },
     useCase: { en: "industrial applications", ar: "التطبيقات الصناعية" },
+    images: [],
   };
 
   const name = data.names[locale] || data.names.en;
   const type = data.types[locale] || data.types.en;
 
+  const imageKey = `${serviceKey}Images`;
+  let translatedImages = [];
+  if (t.has(imageKey)) {
+    translatedImages = t.raw(imageKey);
+  }
+  const displayImages = translatedImages.length > 0 ? translatedImages : (data.images || []);
+
   return (
     <div className="bg-white">
       <ServiceHero data={data} type={type} name={name} />
+
+      {/* Image Carousel — placed right after hero */}
+      {displayImages && displayImages.length > 0 && (
+        <ServiceImageCarousel images={displayImages} name={name} />
+      )}
+
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start relative">

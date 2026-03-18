@@ -1,3 +1,115 @@
+Bonyan Group - Homepage
+Hero Section
+BONYAN GROUP
+Building Strength in Every Project
+Bonyan Group is a leading company specializing in the trading and supply of all steel materials, including beams, plates, and structural sections, as well as copper materials, hoists, cranes, and crane accessories.
+We support construction and industrial projects with materials that meet international standards and perform under pressure.
+Strength you can build on. Reliability you can trust.
+Primary CTA:
+Contact Us | Request a Quote
+
+Who We Are
+Bonyan Group is a multi-division industrial supply company serving clients across Egypt, Africa and the Middle East.
+We specialize the trading of all steel materials, including beams, plates, and structural sections, as well as hoists, cranes and crane accessories.
+Our approach is straightforward: understand the project, supply the right materials, and stand behind them. We believe long-term partnerships are built through consistency, not promises.
+
+What We Do
+Steel Supply
+We provide structural and industrial steel materials suitable for a wide range of applications.
+● Steel Beams (H, I, C, L Sections)
+
+● Steel Plates and Coils
+
+● Hollow Sections and Steel Bars
+
+● Custom Fabricated Steel Solutions
+Supplied to meet project specifications and industry standards.
+
+Lifting & Crane Solutions
+Our lifting division delivers reliable equipment designed for safety, efficiency, and heavy-duty operations.
+● Electric Chain Hoists
+
+● Wire Rope Hoists
+
+● Overhead Cranes
+
+● Jib Cranes
+
+● Gantry Cranes
+
+● Monorail Systems
+
+● Crane Accessories and Spare Parts
+
+We support both new installations and ongoing operational requirements.
+
+Copper Supply
+High-purity copper products for electrical, industrial, and specialized uses.
+● Copper Sheets and Plates
+
+● Copper Rods and Bars
+
+● Custom Copper Supply Solutions
+
+Precision, consistency, and dependable sourcing.
+
+Industrial & Automotive Paints
+Protective and decorative coatings designed for demanding environments.
+● Industrial Coatings
+
+● Automotive Paints
+
+● Wood Paints
+
+● Thinners and Additives
+
+Built for durability and performance.
+
+Why Choose Bonyan Group
+● Multi-division industrial supplier
+
+● Materials aligned with international quality standards
+
+● Reliable sourcing and consistent availability
+
+● Practical technical support and industry experience
+
+● Long-term partnership mindset
+
+We don’t compete on noise. We compete on performance.
+
+Industries We Serve
+● Construction and Infrastructure
+
+● Manufacturing and Heavy Industry
+
+● Warehousing and Logistics
+
+● Automotive and Industrial Facilities
+
+● Energy and Utilities
+
+If materials move, lift, protect, or support structures, we’re involved.
+
+Our Commitment
+Integrity, reliability, and quality define everything we supply.
+Every shipment represents our reputation on-site, and we take that responsibility seriously.
+Our goal is not to be the cheapest supplier, but the most dependable one.
+
+Call to Action
+Looking for a reliable industrial supply partner?
+Our team is ready to support your next project with the right materials and solutions.
+Get in Touch Today
+Request a Quote
+
+Contact Preview
+Bonyan Group
+Cairo, Egypt
+📞 +20 109 753 6662
+📧 Sales@bonyangroup.co
+🌐 www.bonyangroup.co
+
+=========================================
 Bonyan Group - Individual Service
 [Service Name]
 Reliable [Service Type] Solutions for Industrial Projects
@@ -88,7 +200,7 @@ You can contact Bonyan Group through any of the following channels. Our team wil
 Phone
 📞 +20 109 753 6662
 Email
-📧 info@bonyangroup.com
+📧 Sales@bonyangroup.co
 Website
 🌐 www.bonyangroup.com
 
