@@ -13,7 +13,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-[700px] md:h-[800px] overflow-hidden">
+      className="relative h-full py-20 md:py-40 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/30 z-10"></div>
@@ -23,7 +23,7 @@ export function HeroSection() {
           transition={{ duration: 10, ease: "easeOut" }}
           className="w-full h-full">
           <ImageWithFallback
-            src="/assets/services/irondep/steel 1.png"
+            src="/assets/services/cranesdep/mainpage.jpeg"
             alt="Steel Production Facility"
             className="w-full h-full object-cover"
           />
@@ -33,7 +33,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div className="max-w-3xl text-white pt-10">
+        <div className="max-w-3xl text-white ">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}

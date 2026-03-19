@@ -37,7 +37,7 @@ export function WhatWeDoSection() {
       icon: Zap,
       description: t("lifting.description"),
       link: "/services/lifting",
-      image: "/assets/services/cranesdep/istockphoto-1216717981-612x612.jpg",
+      image: "/assets/services/cranesdep/istockphoto-484014187-612x612.jpg",
       items: [
         t("lifting.item1"),
         t("lifting.item2"),
